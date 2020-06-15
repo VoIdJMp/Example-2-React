@@ -15,6 +15,12 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import ChevronRightIcon from '@material-ui/icons/ChevronRight';
 
+import InboxIcon from '@material-ui/icons/Inbox';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemIcon from '@material-ui/core/ListItemIcon';
+import ListItemText from '@material-ui/core/ListItemText';
+import {NavLink} from "react-router-dom";
+
 
 const drawerWidth = 240;
 
@@ -127,6 +133,14 @@ export default function Layout(props) {
                     </IconButton>
                 </div>
                 <Divider />
+                <ListItem button>
+                    <ListItemIcon>
+                        <InboxIcon />
+                    </ListItemIcon>
+                    <NavLink to={'/add-task'} exact={false}>
+                        <ListItemText primary="Добавить задачу" className={'listClass'}/>
+                    </NavLink>
+                </ListItem>
             </Drawer>
             <main
                 className={clsx(classes.content, {

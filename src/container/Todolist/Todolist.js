@@ -51,18 +51,18 @@ class Todolist extends Component {
     render() {
         return (
             <div className="container">
-                {this.state.statusAddTask
-                    ?
-                        <Addtask
-                            onNewTask={this.onAddTask}
-                        />
-                    :
-                        <Edittask
-                            curId={ this.state.curTaskIdForEdit }
-                            curVal={ this.state.curTaskValForEdit }
-                            onTaskChange={ this.onEditChangeTask }
-                        />
-                }
+                {/*{this.state.statusAddTask*/}
+                {/*    ?*/}
+                {/*        <Addtask*/}
+                {/*            onNewTask={this.onAddTask}*/}
+                {/*        />*/}
+                {/*    :*/}
+                {/*        <Edittask*/}
+                {/*            curId={ this.state.curTaskIdForEdit }*/}
+                {/*            curVal={ this.state.curTaskValForEdit }*/}
+                {/*            onTaskChange={ this.onEditChangeTask }*/}
+                {/*        />*/}
+                {/*}*/}
                 <Showtasks
                     tasks={this.state.tasks}
                     onTaskEdit={this.onEditTask}
