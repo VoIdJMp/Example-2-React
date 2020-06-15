@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './Layout.css';
+
 import clsx from 'clsx';
 
 import { makeStyles, useTheme } from '@material-ui/core/styles';
@@ -137,8 +139,8 @@ export default function Layout(props) {
                     <ListItemIcon>
                         <InboxIcon />
                     </ListItemIcon>
-                    <NavLink to={'/add-task'} exact={false}>
-                        <ListItemText primary="Добавить задачу" className={'listClass'}/>
+                    <NavLink to={'/add-task'} exact={false} className={'listClass'}>
+                        <ListItemText primary="Добавить задачу"/>
                     </NavLink>
                 </ListItem>
             </Drawer>

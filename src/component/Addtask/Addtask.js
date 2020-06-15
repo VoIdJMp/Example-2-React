@@ -3,8 +3,6 @@ import "./Addtask.css";
 
 import DateAndTimePickers from "./Datepicker/Datepicker";
 
-
-
 const Addtask = props => {
     let defDateTimeStart = '2017-05-24T10:30';
     let defDateTimeLabelStart = 'Время начало';
